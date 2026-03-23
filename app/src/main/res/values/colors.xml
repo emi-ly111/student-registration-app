@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="verde_principal">#639922</color>
+    <color name="verde_escuro">#3B6D11</color>
+    <color name="verde_claro">#C0DD97</color>
+    <color name="verde_fundo">#EAF3DE</color>
+    <color name="texto_principal">#2C2C2A</color>
+    <color name="texto_secundario">#888780</color>
+    <color name="borda_campo">#B4B2A9</color>
+    <color name="fundo_tela">#F8F9F6</color>
+    <color name="hint_color">#808080</color>
+    <color name="button_warning">#2C2C2A</color>
+</resources>

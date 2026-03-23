@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    tools:context=".MainActivity">
+
+    <!--HEADER-->
+    <LinearLayout
+        style="@style/Header"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de aluno"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Preencha todos os campos"
+            android:textColor="#C0DD97"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+<!--    CAMPO DE DADOS-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+<!--            NOME COMPLETO-->
+            <TextView
+                style="@style/LabelCampo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome completo *">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/nome"
+                style="@style/CampoTexto"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Seu nome"
+
+                >
+            </EditText>
+
+
+<!--            E-MAIL-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LabelCampo"
+                android:text="E-mail *">
+            </TextView>
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/CampoTexto"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="exemplo@email.com"
+                >
+            </EditText>
+
+<!--            IDADE-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LabelCampo"
+                android:text="Idade *">
+            </TextView>
+
+            <EditText
+                android:id="@+id/idade"
+                style="@style/CampoTexto"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex:20"
+                >
+            </EditText>
+
+
+<!--            CURSO-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LabelCampo"
+                android:text="Curso *">
+            </TextView>
+
+            <EditText
+                android:id="@+id/curso"
+                style="@style/CampoTexto"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex: Arquitetura e Urbanismo"
+                >
+            </EditText>
+
+
+<!--            ENDEREÇO-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LabelCampo"
+                android:text="Endereço *">
+            </TextView>
+
+            <EditText
+                android:id="@+id/endereco"
+                style="@style/CampoTexto"
+                android:textColorHint="@color/hint_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rua, número, bairro, cidade..."
+                >
+            </EditText>
+
+
+<!--            BOTÃO DE CADASTRO-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_cadastrar"
+                style="@style/Botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"
+                android:textAllCaps="false"></androidx.appcompat.widget.AppCompatButton>
+
+<!--            BOTAO WARNING PARA CAMPOS OBRIGATÓRIOS VAZIOS-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_warning"
+                style="@style/BotaoWarning"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preencha todos os campos obrigatórios"
+                android:textAllCaps="false">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

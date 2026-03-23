@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="Header">
+        <item name="android:background">@color/verde_principal</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+<!--    BOTÃO DE CADASTRO-->
+    <style name="Botao">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:background">@drawable/button_design</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:radius">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+<!--    CAMPO DE ETIQUETAS-->
+    <style name="LabelCampo">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:textColor">#3B6D11</item>
+    </style>
+
+<!--    CAMPO DE TEXTO-->
+    <style name="CampoTexto">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textColor">@color/texto_principal</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/campo_background</item>
+    </style>
+
+<!--    BOTÃO DE AVISO-->
+    <style name="BotaoWarning">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/button_warning</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+        <item name="android:radius">50dp</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+<!--                TELA DE CONFIRMAÇÃO-->
+
+<!--    CARDVIEW DE DADOS-->
+    <style name="CardDados">
+        <item name="android:layout_margin">20dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">#FFFFFFFF</item>
+    </style>
+
+<!--    LINHA LABEL DO CARDVIEW DE DADOS-->
+    <style name="LinhaLabelCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/texto_secundario</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+<!--    LINHA DADO DO CARDVIEW DE DADOS-->
+        <style name="LinhaDadoCard">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">2</item>
+            <item name="android:textColor">@color/texto_principal</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:gravity">end</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+
+    <style name="Divisor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@color/borda_campo</item>
+    </style>
+
+    <style name="BotaoEditarDados">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/button_editar_dados</item>
+        <item name="android:textColor">@color/verde_principal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:radius">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">14dp</item>
+    </style>
+
+</resources>

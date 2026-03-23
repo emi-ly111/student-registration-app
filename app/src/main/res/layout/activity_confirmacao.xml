@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--HEADER-->
+    <LinearLayout
+        style="@style/Header"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmar dados"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Verifique se os dados estão corretos"
+            android:textColor="#C0DD97"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+<!--            CARDVIEW DE DADOS-->
+            <androidx.cardview.widget.CardView
+                style="@style/CardDados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                LINEARLAYOUT VERTICAL PARA ORGANIZAR AS LINHAS DE DADOS DO CARDVIEW-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollview">
+
+<!--                    NOME-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/LinhaLabelCard"
+                            android:text="Nome">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/texto_nome"
+                            style="@style/LinhaDadoCard"
+                            android:text="Exemplo">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <View style="@style/Divisor"/>
+
+<!--                    EMAIL-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/LinhaLabelCard"
+                            android:text="E-mail"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/texto_email"
+                            style="@style/LinhaDadoCard"
+                            android:text="Exemplo">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <View style="@style/Divisor"/>
+
+<!--                    IDADE-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/LinhaLabelCard"
+                            android:text="Idade"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/texto_idade"
+                            style="@style/LinhaDadoCard"
+                            android:text="Exemplo">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <View style="@style/Divisor"/>
+
+<!--                    CURSO-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/LinhaLabelCard"
+                            android:text="Curso
+"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/texto_curso"
+                            style="@style/LinhaDadoCard"
+                            android:text="Exemplo">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <View style="@style/Divisor"/>
+
+<!--                    ENDEREÇO-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            style="@style/LinhaLabelCard"
+                            android:text="Endereço">
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/texto_endereco"
+                            style="@style/LinhaDadoCard"
+                            android:text="Exemplo">
+                        </TextView>
+
+                    </LinearLayout>
+
+<!--                    BOTAO CONFIMAR CADASTRO-->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/botao_confirmar_cadastro"
+                        style="@style/Botao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmar cadastro"
+                        android:textAllCaps="false"></androidx.appcompat.widget.AppCompatButton>
+
+<!--                    BOTAO EDITAR DADOS-->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/botao_editar_dados"
+                        style="@style/BotaoEditarDados"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Editar dados"
+                        android:textAllCaps="false"></androidx.appcompat.widget.AppCompatButton>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
